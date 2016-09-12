@@ -1,1 +1,1 @@
-web: gunicorn twockson.wsgi
+web: python app.py

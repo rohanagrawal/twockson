@@ -13,4 +13,5 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(debug=DEBUG, host=HOST, port=PORT)
+    heroku_port = int(os.environ.get('PORT', PORT))
+    app.run(debug=DEBUG, host=HOST, port=heroku_port)
